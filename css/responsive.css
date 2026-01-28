@@ -1,0 +1,198 @@
+/* Estilos responsive para el Portafolio DWOS */
+
+@media (max-width: 768px) {
+    /* Header */
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .header-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .header-content .lead {
+        font-size: 1rem;
+    }
+    
+    /* Tarjetas */
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .student-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Botón flotante */
+    .upload-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    /* Navegación */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    /* Perfiles */
+    .profile-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Estadísticas */
+    .stats-number {
+        font-size: 2rem;
+    }
+    
+    /* Actividades */
+    .activity-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .activity-actions {
+        flex-wrap: wrap;
+    }
+    
+    /* Filtros */
+    .filters-container .row > div {
+        margin-bottom: 1rem;
+    }
+    
+    /* Modales */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    /* Footer */
+    .footer-links {
+        text-align: center;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Header */
+    header {
+        padding: 3rem 0 2rem;
+    }
+    
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Secciones */
+    .welcome-section,
+    .card-section,
+    .unit-content,
+    .evidence-section,
+    .profile-section,
+    .activities-section {
+        padding: 3rem 0;
+    }
+    
+    /* Títulos */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Tarjetas de unidades */
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    /* Formularios */
+    .form-control, .form-select {
+        font-size: 0.9rem;
+    }
+    
+    /* Vista previa de archivos */
+    .file-preview-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .file-preview-info {
+        width: 100%;
+    }
+    
+    /* Botones de acción */
+    .activity-actions button {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Header */
+    .header-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    .header-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Logo */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* Estudiantes */
+    .student-card {
+        padding: 1rem;
+    }
+    
+    .student-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* Estadísticas */
+    .stats-card {
+        padding: 1rem;
+    }
+    
+    .stats-number {
+        font-size: 1.8rem;
+    }
+    
+    /* Botones */
+    .btn-primary, .btn-accent {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Metadatos de actividades */
+    .activity-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .activity-tag {
+        width: 100%;
+        text-align: center;
+    }
+}
