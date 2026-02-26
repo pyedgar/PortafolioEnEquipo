@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Evidencias - Desarrollo Web Orientado a Servicios</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="logo-container">
+                <i class="bi bi-code-slash logo-icon"></i>
+                <a class="navbar-brand" href="#inicio">Portafolio DWOS</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfiles">Perfiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unidad1">Unidad 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unidad2">Unidad 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unidad3">Unidad 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actividades">Actividades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Inicio -->
+    <header id="inicio">
+        <div class="header-bg"></div>
+        <div class="container header-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="team-badge">Trabajo en Equipo</div>
+                    <h1 class="display-4 fw-bold mb-3">Portafolio de Evidencias</h1>
+                    <h3 class="mb-4">Desarrollo Web Orientado a Servicios</h3>
+                    <p class="lead mb-4">Aplicación web que presenta los contenidos vistos en la materia de Desarrollo Web Orientado a Servicios, aplicando buenas prácticas de diseño y desarrollo.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5><i class="bi bi-book me-2"></i> Materia</h5>
+                            <p class="mb-3">Desarrollo Web Orientado a Servicios</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="bi bi-building me-2"></i> Carrera</h5>
+                            <p class="mb-3">Desarrollo de Software Multiplataforma</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="bi bi-calendar-event me-2"></i> Cuatrimestre</h5>
+                            <p class="mb-3">Enero - Abril 2026 | 5 DSM A</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="bi bi-people me-2"></i> Integrantes</h5>
+                            <p class="mb-3">2 Alumnos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="p-4 bg-white rounded-3 shadow">
+                        <i class="bi bi-laptop display-1 text-primary mb-3"></i>
+                        <h4 class="text-dark">Aplicación Web</h4>
+                        <p class="text-muted">Orientada a Servicios</p>
+                        <button class="btn btn-accent mt-2" onclick="mostrarModalSubida()">
+                            <i class="bi bi-cloud-upload me-2"></i>Subir Actividad
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Equipo de Desarrollo -->
+            <div class="mt-5">
+                <h4 class="text-center mb-4">Equipo de Desarrollo</h4>
+                <div class="students-container">
+                    <div class="student-card">
+                        <img src="assets/images/edgar.jpeg" class="student-avatar" alt="Edgar Reyes de la Cruz">
+                        <div class="student-name">Edgar Reyes de la Cruz</div>
+                        <div class="student-id">ID: 20261234</div>
+                        <div class="mt-2">
+                            <span class="badge bg-primary">Frontend</span>
+                            <span class="badge bg-success">Diseño</span>
+                        </div>
+                    </div>
+                    
+                    <div class="student-card">
+                        <img src="assets/images/ramiro.jpeg" class="student-avatar" alt="Ramiro Alejandro">
+                        <div class="student-name">Ramiro Alejandro</div>
+                        <div class="student-id">ID: 20265678</div>
+                        <div class="mt-2">
+                            <span class="badge bg-warning">Backend</span>
+                            <span class="badge bg-info">API Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Actividades -->
+    <section id="actividades" class="activities-section">
+        <div class="container">
+            <h2 class="section-title text-center">Sistema de Gestión de Actividades</h2>
+            <p class="text-center mb-5 fs-5">Sube y gestiona tus actividades organizadas por unidad. Trabajo colaborativo entre Edgar Reyes y Ramiro Alejandro.</p>
+            
+            <!-- Estadísticas -->
+            <div class="row mb-4" id="estadisticas-container">
+                <!-- Las estadísticas se cargarán aquí -->
+            </div>
+            
+            <!-- Filtros -->
+            <div class="filters-container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Filtrar por Unidad</label>
+                        <select class="form-select" id="filter-unit">
+                            <option value="todas">Todas las Unidades</option>
+                            <option value="1">Unidad 1 - Introducción</option>
+                            <option value="2">Unidad 2 - Implementación API</option>
+                            <option value="3">Unidad 3 - Desarrollo API</option>
+                            <option value="4">Unidad 4 - Implementación</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Filtrar por Estado</label>
+                        <select class="form-select" id="filter-status">
+                            <option value="todos">Todos los Estados</option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="entregado">Entregado</option>
+                            <option value="vencido">Vencido</option>
+                            <option value="revisado">Revisado</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Filtrar por Tipo</label>
+                        <select class="form-select" id="filter-type">
+                            <option value="todos">Todos los Tipos</option>
+                            <option value="teoria">Teoría</option>
+                            <option value="practica">Práctica</option>
+                            <option value="evidencia">Evidencia</option>
+                            <option value="proyecto">Proyecto</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Ordenar por</label>
+                        <select class="form-select" id="filter-sort">
+                            <option value="fecha-reciente">Fecha más reciente</option>
+                            <option value="fecha-antigua">Fecha más antigua</option>
+                            <option value="nombre-asc">Nombre (A-Z)</option>
+                            <option value="nombre-desc">Nombre (Z-A)</option>
+                            <option value="unidad">Unidad</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="search-activities" 
+                               placeholder="Buscar actividad por título, descripción o URL...">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100" onclick="aplicarFiltros()">
+                            <i class="bi bi-funnel me-2"></i>Filtrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lista de Actividades -->
+            <div id="activities-list">
+                <!-- Las actividades se cargarán aquí dinámicamente -->
+            </div>
+            
+            <!-- Botón de Exportación -->
+            <div class="text-center mt-4">
+                <button class="btn btn-success" onclick="exportarReporteActividades()">
+                    <i class="bi bi-download me-2"></i>Exportar Reporte
+                </button>
+            </div>
+        </div>
+        
+        <!-- Botón flotante para subir actividades -->
+        <button class="btn btn-primary upload-btn" onclick="mostrarModalSubida()">
+            <i class="bi bi-plus-lg"></i>
+        </button>
+    </section>
+
+    <!-- Sección de Perfiles -->
+    <section id="perfiles" class="profile-section">
+        <div class="container">
+            <h2 class="section-title center">Perfiles de los Integrantes</h2>
+            <p class="text-center mb-5 fs-5">Conoce a los desarrolladores detrás de este portafolio de evidencias.</p>
+            
+            <div class="row g-4">
+                <!-- Perfil Edgar -->
+                <div class="col-lg-6">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="assets/images/edgar.jpeg" class="profile-avatar" alt="Edgar Reyes de la Cruz">
+                            <h3>Edgar Reyes de la Cruz</h3>
+                            <p class="text-muted">Desarrollador Frontend & Diseñador UI/UX</p>
+                            <div>
+                                <span class="badge bg-primary me-2">HTML/CSS</span>
+                                <span class="badge bg-primary me-2">JavaScript</span>
+                                <span class="badge bg-primary me-2">Bootstrap</span>
+                                <span class="badge bg-primary me-2">React</span>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="bi bi-info-circle me-2"></i>Información</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>ID:</strong> 20261234</li>
+                                    <li class="mb-2"><strong>Correo:</strong> 24040044@alumno.utc.edu.mx</li>
+                                    <li class="mb-2"><strong>Teléfono:</strong> 55 1234 5678</li>
+                                    <li class="mb-2"><strong>Rol en el proyecto:</strong> Frontend & Diseño</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="bi bi-award me-2"></i>Habilidades</h5>
+                                <ul class="profile-skills">
+                                    <li>Diseño de Interfaces de Usuario</li>
+                                    <li>Desarrollo Web Responsive</li>
+                                    <li>Frameworks CSS (Bootstrap, Tailwind)</li>
+                                    <li>Optimización de Rendimiento Frontend</li>
+                                    <li>Integración de APIs REST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5><i class="bi bi-journal-text me-2"></i>Contribución al Proyecto</h5>
+                            <p>Diseñó y desarrolló la interfaz de usuario del portafolio, implementando buenas prácticas de diseño web responsive y accesibilidad. Creó la estructura HTML/CSS y la integración con Bootstrap para un diseño moderno y elegante.</p>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="mailto:24040044@alumno.utc.edu.mx" class="btn btn-primary me-2">
+                                <i class="bi bi-envelope me-1"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfil Ramiro -->
+                <div class="col-lg-6">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="assets/images/ramiro.jpeg" class="profile-avatar" alt="Ramiro Alejandro">
+                            <h3>Ramiro Alejandro</h3>
+                            <p class="text-muted">Desarrollador Backend & Especialista en APIs</p>
+                            <div>
+                                <span class="badge bg-warning me-2">Node.js</span>
+                                <span class="badge bg-warning me-2">Express</span>
+                                <span class="badge bg-warning me-2">MongoDB</span>
+                                <span class="badge bg-warning me-2">API REST</span>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="bi bi-info-circle me-2"></i>Información</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>ID:</strong> 20265678</li>
+                                    <li class="mb-2"><strong>Correo:</strong> 24040004@alumno.utc.edu.mx</li>
+                                    <li class="mb-2"><strong>Teléfono:</strong> 55 8765 4321</li>
+                                    <li class="mb-2"><strong>Rol en el proyecto:</strong> Backend & APIs</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="bi bi-award me-2"></i>Habilidades</h5>
+                                <ul class="profile-skills">
+                                    <li>Desarrollo de APIs RESTful</li>
+                                    <li>Arquitectura de Microservicios</li>
+                                    <li>Bases de Datos (SQL & NoSQL)</li>
+                                    <li>Autenticación y Autorización</li>
+                                    <li>Despliegue en la Nube</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5><i class="bi bi-journal-text me-2"></i>Contribución al Proyecto</h5>
+                            <p>Desarrolló la lógica de backend y la estructura de servicios del portafolio. Implementó la arquitectura orientada a servicios y diseñó la integración con APIs externas. Gestionó la configuración del hosting y despliegue de la aplicación.</p>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="mailto:24040004@alumno.utc.edu.mx" class="btn btn-primary me-2">
+                                <i class="bi bi-envelope me-1"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Bienvenida -->
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="section-title">Bienvenido al Portafolio</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="p-4 p-md-5 bg-light rounded-3">
+                        <p class="fs-5">Este portafolio presenta las evidencias del desarrollo de una aplicación web orientada a servicios, aplicando conceptos de arquitectura SOA y uso de APIs. Fue desarrollado de manera colaborativa por <strong>Edgar Reyes de la Cruz</strong> y <strong>Ramiro Alejandro</strong>.</p>
+                        <p class="fs-5 mt-3">Aquí encontrarás un compendio de los contenidos y aprendizajes obtenidos en la materia de Desarrollo Web Orientado a Servicios, organizados en unidades temáticas que abarcan desde los fundamentos conceptuales hasta la implementación práctica de servicios web.</p>
+                        <p class="fs-5 mt-3">El objetivo principal es demostrar la aplicación de buenas prácticas de diseño y desarrollo web, así como la implementación de servicios funcionales dentro de una arquitectura orientada a servicios.</p>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-primary btn-lg me-3" onclick="mostrarModalSubida()">
+                                <i class="bi bi-cloud-upload me-2"></i>Subir Actividad
+                            </button>
+                            <a href="#perfiles" class="btn btn-accent btn-lg">
+                                <i class="bi bi-people me-2"></i>Conocer al Equipo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Unidades -->
+    <section id="unidades" class="card-section">
+        <div class="container">
+            <h2 class="section-title text-center">Unidades del Portafolio</h2>
+            <p class="text-center mb-5 fs-5">Explora los contenidos de la materia organizados en unidades temáticas.</p>
+            
+            <div class="row g-4">
+                <!-- Unidad 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-cloud-arrow-up card-icon"></i>
+                            <h4 class="card-title">Unidad 1</h4>
+                            <p class="card-text">Introducción al Desarrollo Web Orientado a Servicios. Conceptos fundamentales, arquitectura SOA y servicios en la nube.</p>
+                            <a href="#unidad1" class="btn btn-primary mt-3">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Unidad 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-geo-alt card-icon"></i>
+                            <h4 class="card-title">Unidad 2</h4>
+                            <p class="card-text">Implementación de API. Geolocalización, Redes Sociales, Bases de Datos, Plataformas Online y Streaming.</p>
+                            <a href="#unidad2" class="btn btn-primary mt-3">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Unidad 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-gear card-icon"></i>
+                            <h4 class="card-title">Unidad 3</h4>
+                            <p class="card-text">Desarrollo de una Interfaz de Programación de Aplicaciones (API). Creación de APIs RESTful y documentación de servicios.</p>
+                            <a href="#api-desarrollo" class="btn btn-primary mt-3">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Unidad 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-rocket-takeoff card-icon"></i>
+                            <h4 class="card-title">Unidad 4</h4>
+                            <p class="card-text">Implementación. Despliegue de aplicaciones web orientadas a servicios en entornos de producción.</p>
+                            <a href="#implementacion" class="btn btn-primary mt-3">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unidad 1 -->
+    <section id="unidad1" class="unit-content">
+        <div class="container">
+            <h2 class="section-title">Unidad 1: Introducción al Desarrollo Web Orientado a Servicios</h2>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>Esta sección fue desarrollada colaborativamente por <strong>Edgar Reyes</strong> (diseño de contenido) y <strong>Ramiro Alejandro</strong> (contenido técnico).
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="topic-card">
+                        <h4><i class="bi bi-cloud me-2"></i>1. Paradigma del desarrollo de aplicaciones orientadas a servicios</h4>
+                        <div class="mt-3">
+                            <h5>Servicios en la nube</h5>
+                            <p>Distinguir los servicios que se ofrecen en la nube: SaaS (Software como Servicio), PaaS (Plataforma como Servicio), IaaS (Infraestructura como Servicio).</p>
+                            
+                            <h5 class="mt-3">Características de las aplicaciones orientadas a servicios</h5>
+                            <ul>
+                                <li>Modularidad y reutilización de componentes</li>
+                                <li>Interoperabilidad entre diferentes sistemas</li>
+                                <li>Escalabilidad y flexibilidad</li>
+                                <li>Bajo acoplamiento entre servicios</li>
+                                <li>Abstracción de la implementación subyacente</li>
+                            </ul>
+                            
+                            <h5 class="mt-3">Aplicaciones web híbridas (Mashup)</h5>
+                            <p>Identificar el concepto y las características de las aplicaciones web híbridas que combinan datos o funcionalidades de múltiples fuentes para crear un nuevo servicio integrado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <h4><i class="bi bi-diagram-3 me-2"></i>2. Arquitectura Orientada a Servicios (SOA)</h4>
+                        <div class="mt-3">
+                            <h5>Definición de SOA</h5>
+                            <p>La Arquitectura Orientada a Servicios (SOA) es un estilo de arquitectura de software que permite la creación de sistemas a partir de servicios reutilizables e interoperables, los cuales se comunican a través de estándares bien definidos.</p>
+                            
+                            <h5 class="mt-3">Principios de diseño</h5>
+                            <ul>
+                                <li>Contratos de servicio estandarizados</li>
+                                <li>Bajo acoplamiento entre servicios</li>
+                                <li>Abstracción de la lógica de negocio</li>
+                                <li>Reutilización de servicios</li>
+                                <li>Autonomía de los servicios</li>
+                                <li>Descubrimiento de servicios</li>
+                                <li>Composición de servicios</li>
+                            </ul>
+                            
+                            <h5 class="mt-3">Estándares relacionados</h5>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6>XML (eXtensible Markup Language)</h6>
+                                        <p class="mb-0">Lenguaje de marcado extensible para estructuración de datos.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6>SOAP (Simple Object Access Protocol)</h6>
+                                        <p class="mb-0">Protocolo para intercambio de información en servicios web.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6>WSDL (Web Services Description Language)</h6>
+                                        <p class="mb-0">Lenguaje para describir interfaces de servicios web.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6>UDDI (Universal Description, Discovery and Integration)</h6>
+                                        <p class="mb-0">Registro de servicios web para su descubrimiento.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="p-3 border rounded">
+                                        <h6>REST (Representational State Transfer)</h6>
+                                        <p class="mb-0">Estilo arquitectónico para sistemas distribuidos, basado en HTTP y principios de recursos y operaciones estándar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unidad 2 -->
+    <section id="unidad2" class="unit-content bg-light">
+        <div class="container">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="section-title mb-0">Unidad II: Implementación de Interfaz de Programación de Aplicaciones (API)</h2>
+            </div>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>Esta sección fue desarrollada colaborativamente por <strong>Edgar Reyes</strong> (diseño de contenido) y <strong>Ramiro Alejandro</strong> (contenido técnico).
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-list-check me-2"></i>Temas de la Unidad</h5>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-3 text-primary"></i>
+                                <div>
+                                    <strong>Geolocalización</strong>
+                                    <p class="mb-0 small text-muted">Uso de APIs de geolocalización en aplicaciones web</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-people-fill me-3 text-success"></i>
+                                <div>
+                                    <strong>Redes Sociales</strong>
+                                    <p class="mb-0 small text-muted">Integración con APIs de plataformas sociales</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-database-fill me-3 text-warning"></i>
+                                <div>
+                                    <strong>Bases de Datos</strong>
+                                    <p class="mb-0 small text-muted">Conexión y manipulación de bases de datos</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-laptop-fill me-3 text-info"></i>
+                                <div>
+                                    <strong>Plataformas On-Line</strong>
+                                    <p class="mb-0 small text-muted">Desarrollo para entornos de plataformas web</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-play-circle-fill me-3 text-danger"></i>
+                                <div>
+                                    <strong>Plataformas Streaming</strong>
+                                    <p class="mb-0 small text-muted">Integración con servicios de streaming multimedia</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenido detallado de los temas -->
+            <div class="content-block">
+                <h5><i class="bi bi-geo-alt me-2 text-primary"></i>🌍 Geolocalización</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-primary">¿Qué es la Geolocalización?</h6>
+                            <p>La <strong>geolocalización</strong> es una tecnología que permite conocer la ubicación de una persona, dispositivo u objeto en tiempo real mediante el uso de GPS, redes móviles o conexión a internet.</p>
+                            
+                            <h6 class="mt-3 text-primary">Aplicaciones Prácticas:</h6>
+                            <ul>
+                                <li><strong>Google Maps:</strong> Navegación y búsqueda de lugares</li>
+                                <li><strong>Uber/Didi:</strong> Servicios de transporte y entrega</li>
+                                <li><strong>Apps de entrega:</strong> Seguimiento de pedidos en tiempo real</li>
+                                <li><strong>Redes sociales:</strong> Etiquetado de ubicaciones y lugares cercanos</li>
+                                <li><strong>Aplicaciones meteorológicas:</strong> Pronóstico del tiempo por ubicación</li>
+                            </ul>
+                            
+                            <h6 class="mt-3 text-primary">Ventajas principales:</h6>
+                            <ul>
+                                <li>Facilita la navegación y orientación</li>
+                                <li>Mejora servicios personalizados</li>
+                                <li>Optimiza la toma de decisiones basadas en ubicación</li>
+                                <li>Permite servicios de emergencia más eficientes</li>
+                                <li>Fomenta el comercio local y promociones geográficas</li>
+                            </ul>
+                            
+                            <div class="alert alert-info mt-3">
+                                <i class="bi bi-lightbulb me-2"></i>
+                                <strong>Implementación en APIs:</strong> Las APIs de geolocalización como Google Maps API, Mapbox o OpenStreetMap permiten integrar mapas, calcular rutas y obtener coordenadas en aplicaciones web.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-people me-2 text-success"></i>📱 Redes Sociales</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-success">¿Qué son las Redes Sociales?</h6>
+                            <p>Las <strong>redes sociales</strong> son plataformas digitales que permiten la comunicación, interacción y el intercambio de información entre personas o grupos.</p>
+                            
+                            <h6 class="mt-3 text-success">Principales plataformas:</h6>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><strong>Facebook:</strong> Red social generalista más popular</li>
+                                        <li><strong>Instagram:</strong> Red visual centrada en fotos y videos</li>
+                                        <li><strong>TikTok:</strong> Plataforma de videos cortos virales</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><strong>X (Twitter):</strong> Red de microblogging y noticias</li>
+                                        <li><strong>WhatsApp:</strong> Aplicación de mensajería instantánea</li>
+                                        <li><strong>LinkedIn:</strong> Red profesional y de negocios</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <h6 class="mt-3 text-success">Usos principales:</h6>
+                            <ul>
+                                <li><strong>Compartir contenido:</strong> Fotos, videos, textos y enlaces</li>
+                                <li><strong>Comunicación:</strong> Mensajes directos y grupos de chat</li>
+                                <li><strong>Promoción de negocios:</strong> Marketing digital y publicidad</li>
+                                <li><strong>Creación de comunidades:</strong> Grupos de interés común</li>
+                                <li><strong>Entretenimiento:</strong> Contenido viral y tendencias</li>
+                            </ul>
+                            
+                            <div class="alert alert-success mt-3">
+                                <i class="bi bi-share me-2"></i>
+                                <strong>Integración con APIs:</strong> Las APIs de redes sociales (Facebook Graph API, Twitter API, Instagram Basic Display API) permiten autenticación con redes sociales, publicación programática y obtención de datos de usuarios.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-database me-2 text-warning"></i>🗄️ Bases de Datos</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-warning">¿Qué son las Bases de Datos?</h6>
+                            <p>Las <strong>bases de datos</strong> son sistemas que permiten almacenar, organizar y gestionar grandes cantidades de información de forma estructurada y eficiente.</p>
+                            
+                            <h6 class="mt-3 text-warning">Tipos de Bases de Datos:</h6>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="p-2 bg-light rounded mb-2">
+                                        <strong>SQL (Relacionales):</strong>
+                                        <ul class="mb-0">
+                                            <li>MySQL</li>
+                                            <li>SQL Server</li>
+                                            <li>Oracle Database</li>
+                                            <li>PostgreSQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-2 bg-light rounded mb-2">
+                                        <strong>NoSQL (No relacionales):</strong>
+                                        <ul class="mb-0">
+                                            <li>MongoDB</li>
+                                            <li>Firebase</li>
+                                            <li>Cassandra</li>
+                                            <li>Redis</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h6 class="mt-3 text-warning">Aplicaciones comunes:</h6>
+                            <ul>
+                                <li><strong>Aplicaciones web:</strong> Almacenamiento de usuarios, productos y transacciones</li>
+                                <li><strong>Sistemas administrativos:</strong> Registro de empleados, inventarios y ventas</li>
+                                <li><strong>Plataformas educativas:</strong> Gestión de estudiantes, cursos y calificaciones</li>
+                                <li><strong>Comercio electrónico:</strong> Catálogos de productos y órdenes de compra</li>
+                                <li><strong>Aplicaciones móviles:</strong> Datos locales y sincronización en la nube</li>
+                            </ul>
+                            
+                            <h6 class="mt-3 text-warning">Microsoft Access:</h6>
+                            <p>Es un sistema de gestión de bases de datos relacional desarrollado por Microsoft, ideal para pequeñas y medianas aplicaciones de escritorio.</p>
+                            
+                            <div class="alert alert-warning mt-3">
+                                <i class="bi bi-hdd me-2"></i>
+                                <strong>Conectividad con APIs:</strong> Las APIs RESTful permiten interactuar con bases de datos a través de operaciones CRUD (Crear, Leer, Actualizar, Eliminar) usando estándares HTTP.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-laptop me-2 text-info"></i>🌐 Plataformas On-Line</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-info">¿Qué son las Plataformas On-Line?</h6>
+                            <p>Las <strong>plataformas on-line</strong> son entornos digitales accesibles a través de internet que ofrecen servicios, herramientas o contenidos específicos a los usuarios.</p>
+                            
+                            <h6 class="mt-3 text-info">Ejemplos de plataformas:</h6>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">Educativas</h6>
+                                            <ul class="mb-0">
+                                                <li>Google Classroom</li>
+                                                <li>Moodle</li>
+                                                <li>Coursera</li>
+                                                <li>Udemy</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">Comerciales</h6>
+                                            <ul class="mb-0">
+                                                <li>Amazon</li>
+                                                <li>Mercado Libre</li>
+                                                <li>Shopify</li>
+                                                <li>eBay</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">Financieras</h6>
+                                            <ul class="mb-0">
+                                                <li>Bancos en línea</li>
+                                                <li>PayPal</li>
+                                                <li>Stripe</li>
+                                                <li>Plataformas de trading</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">Productividad</h6>
+                                            <ul class="mb-0">
+                                                <li>Google Workspace</li>
+                                                <li>Microsoft 365</li>
+                                                <li>Trello</li>
+                                                <li>Slack</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h6 class="mt-3 text-info">Objetivos principales:</h6>
+                            <ul>
+                                <li><strong>Facilitar el aprendizaje:</strong> Educación a distancia y capacitación en línea</li>
+                                <li><strong>Simplificar compras:</strong> Comercio electrónico y pagos digitales</li>
+                                <li><strong>Gestión de información:</strong> Almacenamiento en la nube y colaboración</li>
+                                <li><strong>Mejorar comunicación:</strong> Herramientas de videoconferencia y mensajería</li>
+                                <li><strong>Automatizar procesos:</strong> Sistemas de gestión empresarial</li>
+                            </ul>
+                            
+                            <div class="alert alert-info mt-3">
+                                <i class="bi bi-cloud me-2"></i>
+                                <strong>Desarrollo de APIs para plataformas:</strong> Las plataformas modernas exponen APIs que permiten a desarrolladores de terceros crear integraciones, extensiones y aplicaciones complementarias.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-play-circle me-2 text-danger"></i>🎬 Plataformas Streaming</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-danger">¿Qué son las Plataformas de Streaming?</h6>
+                            <p>Las <strong>plataformas de streaming</strong> permiten la transmisión de contenido multimedia (videos, series, películas o música) en tiempo real a través de internet, sin necesidad de descargar los archivos completos.</p>
+                            
+                            <h6 class="mt-3 text-danger">Principales plataformas:</h6>
+                            <div class="row mt-2">
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center p-3 border rounded h-100">
+                                        <i class="bi bi-film display-6 text-danger mb-2"></i>
+                                        <h6 class="text-danger">Video</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Netflix</li>
+                                            <li>YouTube</li>
+                                            <li>Disney+</li>
+                                            <li>Amazon Prime Video</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center p-3 border rounded h-100">
+                                        <i class="bi bi-music-note-beamed display-6 text-danger mb-2"></i>
+                                        <h6 class="text-danger">Música</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Spotify</li>
+                                            <li>Apple Music</li>
+                                            <li>Deezer</li>
+                                            <li>Tidal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center p-3 border rounded h-100">
+                                        <i class="bi bi-controller display-6 text-danger mb-2"></i>
+                                        <h6 class="text-danger">Videojuegos</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Twitch</li>
+                                            <li>YouTube Gaming</li>
+                                            <li>NVIDIA GeForce Now</li>
+                                            <li>Xbox Cloud Gaming</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h6 class="mt-3 text-danger">Características destacadas:</h6>
+                            <ul>
+                                <li><strong>Accesibilidad:</strong> Disponibles desde múltiples dispositivos (smartphones, tablets, smart TVs, computadoras)</li>
+                                <li><strong>Variedad de contenido:</strong> Catálogos extensos y actualizados regularmente</li>
+                                <li><strong>Personalización:</strong> Recomendaciones basadas en preferencias de usuario</li>
+                                <li><strong>Calidad adaptable:</strong> Ajuste automático de calidad según conexión</li>
+                                <li><strong>Multiusuario:</strong> Perfiles individuales y acceso simultáneo</li>
+                            </ul>
+                            
+                            <h6 class="mt-3 text-danger">Ventajas del streaming:</h6>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Sin necesidad de almacenamiento local</li>
+                                        <li>Acceso inmediato al contenido</li>
+                                        <li>Actualizaciones automáticas</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Contenido disponible 24/7</li>
+                                        <li>Mayor seguridad contra piratería</li>
+                                        <li>Suscripciones flexibles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="alert alert-danger mt-3">
+                                <i class="bi bi-cast me-2"></i>
+                                <strong>APIs de streaming:</strong> Plataformas como YouTube Data API, Spotify Web API y Twitch API permiten a desarrolladores integrar funcionalidades de streaming, buscar contenido y controlar la reproducción en sus aplicaciones.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-question-circle me-2"></i>¿Qué es una API?</h5>
+                <div class="row mt-3">
+                    <div class="col-md-8">
+                        <p>Una <strong>Interfaz de Programación de Aplicaciones (API)</strong> es un conjunto de definiciones y protocolos que permite la comunicación e integración entre diferentes aplicaciones de software.</p>
+                        <div class="mt-3">
+                            <h6>Características principales:</h6>
+                            <ul>
+                                <li><strong>Interfaz definida:</strong> Especifica cómo interactuar con el servicio</li>
+                                <li><strong>Protocolos estandarizados:</strong> Usa HTTP, REST, SOAP, GraphQL, etc.</li>
+                                <li><strong>Abstracción:</strong> Oculta la complejidad interna del servicio</li>
+                                <li><strong>Reutilización:</strong> Permite usar funcionalidades existentes</li>
+                                <li><strong>Escalabilidad:</strong> Facilita el crecimiento del sistema</li>
+                            </ul>
+                            
+                            <h6 class="mt-3">¿Cómo funcionan las APIs en los temas vistos?</h6>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6 class="text-primary">🌍 Geolocalización</h6>
+                                        <p class="small mb-0">APIs como Google Maps permiten integrar mapas, calcular rutas y obtener ubicaciones en tiempo real.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6 class="text-success">📱 Redes Sociales</h6>
+                                        <p class="small mb-0">APIs de Facebook, Twitter, etc., permiten autenticación, publicación y obtención de datos de usuarios.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6 class="text-warning">🗄️ Bases de Datos</h6>
+                                        <p class="small mb-0">APIs RESTful permiten operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre datos.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6 class="text-info">🌐 Plataformas</h6>
+                                        <p class="small mb-0">APIs de plataformas permiten integraciones con servicios de terceros y extensiones.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="p-3 border rounded mb-3">
+                                        <h6 class="text-danger">🎬 Streaming</h6>
+                                        <p class="small mb-0">APIs de YouTube, Spotify, etc., permiten buscar contenido, controlar reproducción y obtener estadísticas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded bg-light">
+                            <h6 class="text-center">Tipos de API</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><span class="badge bg-primary">REST</span> Arquitectura basada en HTTP</li>
+                                <li class="mb-2"><span class="badge bg-secondary">SOAP</span> Protocolo XML basado en mensajes</li>
+                                <li class="mb-2"><span class="badge bg-success">GraphQL</span> Lenguaje de consulta para APIs</li>
+                                <li><span class="badge bg-info">WebSocket</span> Comunicación bidireccional en tiempo real</li>
+                            </ul>
+                            
+                            <div class="mt-4">
+                                <h6 class="text-center">Ejemplo Práctico</h6>
+                                <div class="p-3 bg-white rounded">
+                                    <small><strong>Aplicación de Restaurantes:</strong></small>
+                                    <ul class="small mb-0">
+                                        <li>🌍 Geolocalización: Mapa con ubicación</li>
+                                        <li>📱 Redes Sociales: Compartir en Facebook</li>
+                                        <li>🗄️ Base de Datos: Menú y reservaciones</li>
+                                        <li>🎬 Streaming: Videos del restaurante</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Unidad 3 -->
+    <section id="unidad3" class="unit-content bg-light">
+        <div class="container">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="section-title mb-0">Unidad III Desarrollo de una Interfaz de Programación de Aplicaciones (API).</h2>
+            </div>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>Esta sección fue desarrollada colaborativamente por <strong>Edgar Reyes</strong> (diseño de contenido) y <strong>Ramiro Alejandro</strong> (contenido técnico).
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-list-check me-2"></i>Temas de la Unidad</h5>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-code-slash me-3 text-primary"></i>
+                                <div>
+                                    <strong>Frameworks para el desarrollo de interfaces de programación de aplicaciones</strong>
+                                    <p class="mb-0 small text-muted">Identificar frameworks en el desarrollo de aplicaciones orientadas a servicios</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-code me-3 text-success"></i>
+                                <div>
+                                    <strong>Desarrollo de una interfaz de programación de aplicaciones (API).</strong>
+                                    <p class="mb-0 small text-muted">Identificar el proceso de desarrollo de programación de aplicaciones (API)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenido detallado de los temas -->
+            <div class="content-block">
+                <h5><i class="bi bi-code-slash me-2 text-primary"></i> Frameworks en el Desarrollo de Aplicaciones Orientadas a Servicios</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-primary">🔎 ¿Qué es una aplicación orientada a servicios?</h6>
+                            <p> Una aplicación orientada a servicios (SOA – Service Oriented Architecture) es un modelo de desarrollo donde el sistema se divide en servicios independientes que se comunican entre sí mediante protocolos como HTTP.
+                                Actualmente este modelo también se implementa con microservicios, donde cada servicio cumple una función específica y puede desarrollarse de manera independiente.</p>
+                            
+                            <h6 class="mt-3 text-primary">🧩 Frameworks más utilizados</h6>
+                            <ul>
+                                <li><strong>1️⃣ Express.js:</strong> Framework de Node.js, ligero y flexible, muy utilizado para crear APIs REST, permite manejar rutas, middleware y peticiones HTTP, ideal para aplicaciones backend rápidas y escalables.</li>
+                                <li><strong>2️⃣ Django:</strong> Framework de Python que incluye ORM, autenticación y panel administrativo, permite crear APIs usando Django REST Framework y es recomendado para aplicaciones robustas y seguras.</li>
+                                <li><strong>3️⃣ Spring Boot:</strong> Framework basado en Java, muy utilizado en entornos empresariales, facilita la creación de microservicios y es ideal para sistemas grandes y corporativos.</li>
+                                <li><strong>4️⃣ Laravel:</strong> Framework de PHP con arquitectura MVC, permite crear APIs REST fácilmente y es muy usado en desarrollo web moderno con PHP.</li>
+                                <li><strong>5️⃣ ASP.NET Core:</strong> Framework de Microsoft compatible con C#, ofrece alto rendimiento y seguridad, y es usado en aplicaciones empresariales y servicios en la nube.</li>
+                            </ul>
+                            
+                            <h6 class="mt-3 text-primary">🎯 Importancia de los Frameworks en SOA</h6>
+                            <ul>
+                                <li>Organizar mejor el código.</li>
+                                <li>Implementar seguridad (JWT, OAuth).</li>
+                                <li>Manejar rutas y controladores.</li>
+                                <li>Conectar con bases de datos.</li>
+                                <li>Crear APIs REST o GraphQL.</li>
+                                <li>Facilitar pruebas y mantenimiento.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h5><i class="bi bi-code me-2 text-success"></i>📌 Identificar el Proceso de Desarrollo de Programación de Aplicaciones (API)</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white rounded border">
+                            <h6 class="text-success">🔎 ¿Qué es una API?</h6>
+                            <p>Una <strong>API (Interfaz de Programación de Aplicaciones)</strong> es un conjunto de reglas y protocolos que permite a diferentes aplicaciones comunicarse entre sí. Facilita la integración de funcionalidades entre sistemas, permitiendo compartir datos y servicios sin necesidad de conocer su implementación interna.</p>
+            <div class="content-block">
+                <h5><i class="bi bi-laptop me-2 text-info"></i>🛠 Proceso de Desarrollo de una API</h5>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                            <div class="row mt-2">
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">1️⃣ Análisis de Requerimientos</h6>
+                                            <ul class="mb-0">
+                                                <li>Definir qué problema resolverá la API.</li>
+                                                <li>Identificar los usuarios.</li>
+                                                <li>Determinar qué datos se manejarán.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">2️⃣ Diseño de la API</h6>
+                                            <ul class="mb-0">
+                                                <li>Definir endpoints y métodos HTTP.</li>
+                                                <li>Seleccionar formato de datos (JSON, XML).</li>
+                                                <li>Diseñar estructura de respuestas.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">3️⃣ Desarrollo</h6>
+                                            <ul class="mb-0">
+                                                <li>Configuración del entorno.</li>
+                                                <li>Instalación del framework.</li>
+                                                <li>Creación de rutas y controladores.</li>
+                                                <li>Conexión a base de datos.</li>
+                                                <li>Implementación de validaciones.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-2">
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">4️⃣ Pruebas</h6>
+                                            <h6 class="card-title text-danger">Se realizan pruebas para verificar:</h6>
+                                            <ul class="mb-0">
+                                                <li>Que los endpoints funcionen correctamente.</li>
+                                                <li>Que los datos se guarden.</li>
+                                                <li>Que los errores estén controlados.</li>
+                                            </ul>
+                                            <h6 class="card-title text-danger">Herramientas comunes:</h6>
+                                            <ul class="mb-0">
+                                                <li>Postman</li>
+                                                <li>Insomnia</li>
+                                                <li>Jest (para pruebas unitarias)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">5️⃣ Seguridad</h6>
+                                            <h6 class="mt-3 text-danger">Se implementa:</h6>
+                                            <ul class="mb-0">
+                                                <li>Autenticación (JWT)</li>
+                                                <li>Autorización</li>
+                                                <li>Validación de datos</li>
+                                                <li>Protección contra ataques (CORS, SQL Injection)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <h6 class="card-title text-info">6️⃣ Documentación</h6>
+                                            <p class="small mb-0">Es fundamental documentar la API para que otros desarrolladores puedan entender cómo usarla. Se pueden usar herramientas como Swagger o Apiary para generar documentación interactiva.</p>
+                                            <h6 class="mt-3 text-danger">Herramientas comunes: </h6>
+                                            <ul class="mb-0">
+                                                <li>Swagger</li>
+                                                <li>Apiary</li>
+                                                <li>Postman</li>
+                                                <li>Redoc</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="text-center mt-4">
+                <button class="btn btn-primary btn-lg" onclick="mostrarModalSubida()">
+                    <i class="bi bi-cloud-upload me-2"></i>Subir Actividad de las Unidades
+                </button>
+                <p class="text-muted mt-2 small">Sube tu implementación práctica como evidencia de aprendizaje</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="logo-container mb-3">
+                        <i class="bi bi-code-slash logo-icon"></i>
+                        <h4 class="text-white mb-0">Portafolio DWOS</h4>
+                    </div>
+                    <p>Aplicación web colaborativa que presenta evidencias del desarrollo de software orientado a servicios.</p>
+                    <div class="mt-3">
+                        <h6 class="text-white">Desarrollado por:</h6>
+                        <p>Edgar Reyes de la Cruz<br>Ramiro Alejandro</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-4">Información Académica</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><i class="bi bi-building me-2"></i>Universidad Tecnológica de Coahuila</li>
+                        <li class="mb-2"><i class="bi bi-book me-2"></i>Desarrollo Web Orientado a Servicios</li>
+                        <li class="mb-2"><i class="bi bi-calendar-event me-2"></i>Enero - Abril 2026</li>
+                        <li class="mb-2"><i class="bi bi-people me-2"></i>5 DSM A | Trabajo en Equipo</li>
+                        <li class="mb-2"><i class="bi bi-person me-2"></i>Profesor: David Belmares</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-4">Enlaces</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#inicio"><i class="bi bi-house me-2"></i>Inicio</a></li>
+                        <li class="mb-2"><a href="#perfiles"><i class="bi bi-people me-2"></i>Perfiles del Equipo</a></li>
+                        <li class="mb-2"><a href="#actividades"><i class="bi bi-upload me-2"></i>Actividades</a></li>
+                        <li class="mb-2"><a href="#unidad1"><i class="bi bi-file-text me-2"></i>Unidad 1</a></li>
+                        <li class="mb-2"><a href="#unidad2"><i class="bi bi-file-text me-2"></i>Unidad 2</a></li>
+                        <li class="mb-2"><a href="#unidad3"><i class="bi bi-file-text me-2"></i>Unidad 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright text-center">
+                <p class="mb-0">© 2026 Portafolio de Evidencias - Desarrollo Web Orientado a Servicios. Trabajo colaborativo de Edgar Reyes de la Cruz y Ramiro Alejandro.</p>
+                <p class="mb-0">Universidad Tecnológica de Coahuila | Desarrollo de Software Multiplataforma | 5 DSM A</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para subir actividad -->
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="uploadModalLabel">
+                        <i class="bi bi-cloud-upload me-2"></i>Subir Nueva Actividad
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="uploadForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Unidad <span class="text-danger">*</span></label>
+                                <select class="form-select" id="activity-unit" required>
+                                    <option value="">Seleccionar unidad...</option>
+                                    <option value="1">Unidad 1 - Introducción al Desarrollo Web Orientado a Servicios</option>
+                                    <option value="2">Unidad 2 - Implementación de Interfaz de Programación de Aplicaciones (API)</option>
+                                    <option value="3">Unidad 3 - Desarrollo de una Interfaz de Programación de Aplicaciones (API)</option>
+                                    <option value="4">Unidad 4 - Implementación</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor selecciona una unidad.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Tipo de Actividad <span class="text-danger">*</span></label>
+                                <select class="form-select" id="activity-type" required>
+                                    <option value="">Seleccionar tipo...</option>
+                                    <option value="teoria">Teoría / Documentación</option>
+                                    <option value="practica">Práctica / Ejercicio</option>
+                                    <option value="evidencia">Evidencia / Capturas</option>
+                                    <option value="proyecto">Proyecto</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor selecciona un tipo de actividad.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Título de la Actividad <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="activity-title" placeholder="Ej: Implementación de API REST" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un título para la actividad.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Descripción <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="activity-description" rows="3" placeholder="Describe la actividad, objetivos y desarrollo..." required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor ingresa una descripción.
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Fecha de Entrega <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="activity-due-date" required>
+                                <div class="invalid-feedback">
+                                    Por favor selecciona una fecha de entrega.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Estado</label>
+                                <select class="form-select" id="activity-status">
+                                    <option value="pendiente">Pendiente</option>
+                                    <option value="entregado">Entregado</option>
+                                    <option value="revisado">Revisado</option>
+                                    <option value="vencido">Vencido</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">URL de la Actividad <span class="text-danger">*</span></label>
+                            <input type="url" class="form-control" id="activity-url" 
+                                   placeholder="https://ejemplo.com/mi-actividad" 
+                                   pattern="https?://.+" 
+                                   title="Por favor ingresa una URL válida (debe comenzar con http:// o https://)"
+                                   required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa una URL válida (debe comenzar con http:// o https://).
+                            </div>
+                            <div class="form-text">
+                                Ingresa el enlace a tu actividad (repositorio GitHub, página web, documento online, etc.)
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Responsable</label>
+                            <select class="form-select" id="activity-responsible">
+                                <option value="ambos">Ambos (Trabajo en equipo)</option>
+                                <option value="edgar">Edgar Reyes de la Cruz</option>
+                                <option value="ramiro">Ramiro Alejandro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Observaciones (opcional)</label>
+                            <textarea class="form-control" id="activity-notes" rows="2" placeholder="Notas adicionales..."></textarea>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="notify-teacher">
+                            <label class="form-check-label" for="notify-teacher">
+                                Notificar al profesor sobre esta entrega
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="subirActividad()">
+                        <i class="bi bi-cloud-upload me-2"></i>Subir Actividad
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para ver detalles de actividad -->
+    <div class="modal fade" id="activityDetailModal" tabindex="-1" aria-labelledby="activityDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="activityDetailModalLabel">Detalles de la Actividad</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="activity-detail-content">
+                    <!-- Los detalles se cargarán aquí dinámicamente -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/actividades.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
